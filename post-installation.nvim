@@ -1,0 +1,73 @@
+Arch Linux Post Installation
+
+Important :base base-devel networkmanager efibootmgr grub vim nvim linux linux-firmware sof-firmware
+Recommended :gnome(even if you dont use it, it will useful sometimes for backup)
+
+
+1. Build Own DE from Window Manager 
+
+hyprland
+hypridle
+hyprlock
+hyprpaper
+hyprshot
+hyprpolkitagent
+nautilus
+kitty
+rofi
+mako
+hyprutils
+xwayland
+swww
+waybar
+uwsm
+
+2. Install nouveau
+
+check Arch Wiki : https://wiki.archlinux.org/title/Nouuveau
+
+3. Utility
+
+cava
+C++ (gcc, g++, clang)
+
+os-prober
+git
+vim
+nvim
+lvim
+fcit5x
+fcit5x-mozc
+fcit5x-utils
+gammastep
+eza
+brightnessctl
+htop
+flatpak
+opentabletdriver
+zsh with ohmyzsh
+unzip
+gnome-system-monitor
+make
+automake
+autoconf
+wl-copy
+git
+curl
+wget
+
+4. Install font
+
+sourcecodepro
+nerd-fonts
+google-cjk
+
+
+5. Rice Stuff
+
+pywal
+clock-rs
+unimatrix
+
+
+
