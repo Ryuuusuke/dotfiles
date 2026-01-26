@@ -1,0 +1,17 @@
+[connection]
+account=ryusuke
+
+[ui]
+theme=good-one
+history=true
+wrap=true
+time.console=%H:%M  
+time.muc=%H:%M  
+time.private=%H:%M  
+time.chat=%H:%M  
+
+[logging]
+chlog=true
+
+[omemo]
+omemo.char=

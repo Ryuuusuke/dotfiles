@@ -1,0 +1,13 @@
+$if profanity
+# bind Ctrl+J untuk builtin newline (fungsi 'insert-newline')
+#"\C-n": ""
+#"\C-n": literal-mode
+"\C-p": prof_win_prev
+"\C-n": prof_win_next
+"\C-k": prof_win_pageup
+"\C-j": prof_win_pagedown
+# jangan lupa map ulang Alt+Enter ke fungsi yang lain atau disable
+# contoh: disable newline lewat Alt+Enter
+"\e\r": "")
+$endif
+
