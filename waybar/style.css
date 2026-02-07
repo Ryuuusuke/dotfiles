@@ -43,11 +43,15 @@ button:hover {
 }
 
 #custom-wallpaper {
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 #custom-wallpaper {
     color: @green;
+}
+
+#tray {
+    padding: 0px 10px;
 }
 
 #clock,

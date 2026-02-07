@@ -9,6 +9,7 @@ background = #111111
 theme = catppuccin-mocha
 background-opacity = 0.9
 background-blur = true
+cursor-style = underline
 
 # window
 window-decoration = none
@@ -17,5 +18,5 @@ window-padding-y = 4
 
 # etc
 confirm-close-surface = false
-shell-integration = detect
+shell-integration = zsh
 shell-integration-features = true

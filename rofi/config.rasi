@@ -60,7 +60,7 @@ configuration {
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-	display-drun: "Applications";
+	display-drun: "Apps";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
