@@ -6,6 +6,7 @@ exec-once = waybar &
 exec-once = hyprpaper
 exec-once = eww open activate-linux
 exec-once = fcitx5 --verbose default=0 -d
+exec-once = foot --server > /dev/null 2>&1
 
 # - dark theme
 exec = gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"  # gtk3

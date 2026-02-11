@@ -1,5 +1,5 @@
-# https://wiki.hyprland.org/Configuring/Keywords/
-$terminal = ghostty
+#https://wiki.hyprland.org/Configuring/Keywords/
+$terminal = footclient
 $fileManager = thunar
 $menu = rofi -show drun
 $emoji = rofi -modi emoji -show emoji
