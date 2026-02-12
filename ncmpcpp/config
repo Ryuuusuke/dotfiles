@@ -1,0 +1,35 @@
+[global]
+colors_enabled = "yes"
+centered_cursor = "yes"
+enable_window_title = "yes"
+external_editor = "lvim"
+lyrics_directory = "~/Music/lyrics"
+execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
+
+startup_screen = "playlist"
+startup_slave_screen = "visualizer"
+locked_screen_width_part = "45"
+
+[visualizer]
+visualizer_in_stereo = "no"
+visualizer_type = "spectrum"
+visualizer_look = "●┃"
+
+
+[header]
+header_visibility = "no"
+playlist_shorten_total_times = "yes"
+
+[playlist]
+song_list_format = "{{%a - %t}|{%f}}{$R%l}"
+now_playing_prefix = "$b$5"
+now_playing_suffix = "$/b$9"
+
+[statusbar]
+progressbar_look = "─╼ "
+statusbar_visibility = "no"
+song_status_format = "{{%a{ - %t}}|{ - %f}{ - %b{ (%y)}}}"
+
+[library]
+song_library_format = "{{%a - %t}|{%f}}{$R%l}"
+

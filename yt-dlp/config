@@ -1,0 +1,15 @@
+--extractor-args "youtube:player_client=web"
+--js-runtimes bun
+--cookies-from-browser firefox
+--embed-metadata
+--embed-thumbnail
+--remote-components ejs:github
+-o "%(artist,creator,uploader)s - %(title)s.%(ext)s"
+
+# masih error
+#--embed-subs
+#--write-auto-subs
+#--sub-langs "en.*,ja.*,id.*"
+#--convert-subs lrc
+
+
