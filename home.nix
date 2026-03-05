@@ -7,7 +7,7 @@
 
         home.username = "ryusuke";
         home.homeDirectory = "/home/ryusuke";
-	programs.bash = {
+        programs.bash = {
 		enable = true;
                 enableCompletion = true;
 		shellAliases = {
@@ -59,12 +59,12 @@
                 SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/keyring/ssh";
                 
         };
-	home.sessionPath = [
+        home.sessionPath = [
                 "$HOME/.local/bin"
-		"$HOME/.cargo/bin"
+	        "$HOME/.cargo/bin"
                 "$HOME/rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin"
                 "$HOME/go/bin"
-		"$HOME/$DOTNET_ROOT/tools"
+	        "$HOME/$DOTNET_ROOT/tools"
                 "$HOME/.bun/bin"
 	];
 
