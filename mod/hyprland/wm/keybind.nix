@@ -14,9 +14,9 @@ let
         ];
         centermode = builtins.concatStringsSep " " [
                 "hyprctl --batch" 
-                "dispatch togglefloating;"
+                "'dispatch togglefloating;"
                 "resizeactive exact 830 970;" 
-                "dispatch centerwindow"
+                "dispatch centerwindow'"
         ];
         record = "${scripts}/record.sh";
         incgamma = "${scripts}/gamma.sh -i";

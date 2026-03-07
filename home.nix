@@ -1,8 +1,11 @@
-{ config, pkgs, ... }:
-
+{ ... }:
 {
         imports = [
                 ./mod/hyprland
+                ./mod/rofi
+                ./mod/waybar
+                ./mod/scripts
+                ./mod/programs
         ];
 
         home.username = "ryusuke";
@@ -14,7 +17,6 @@
 			ls ="eza --icons";
 			cat = "bat --theme 'Catppuccin Mocha'";
 			vim = "lvim";
-			wl-copy = "copy";
 			info = "info --vi-keys";
 			ikhal = "LC_ALL=en_US.UTF-8 ikhal";
 		};
@@ -26,24 +28,6 @@
                 '';
 	};	
 
-        home.stateVersion = "25.11";
-
-        home.packages = with pkgs; [
-                bat
-                python313Packages.aria2p
-                aerc
-                localsend
-                gearlever
-                hyprpaper 
-                senpai
-                swayimg
-                (pkgs.rofi.override {
-                         plugins = [ pkgs.rofi-emoji ];
-                })
-                osu-lazer-bin
-                profanity
-        ];
-        
         home.file = {};
         home.sessionVariables = {
                 LC_ALL="ja_JP.UTF-8";
@@ -53,7 +37,7 @@
                 GLFW_IM_MODULE="fcitx";
                 QT_IM_MODULES="wayland;fcitx";
                 QT_QPA_PLATFORMTHEME="qt6ct";
-                MANPAGER="bat -l man --color always --style grid";
+                MANPAGER="bat -l man --color always --style grid --theme 'Catppuccin Mocha'";
                 BUN_INSTALL="$HOME/.bun";
                 DOTNET_ROOT="$HOME/.local/bin";
                 SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/keyring/ssh";
@@ -68,6 +52,8 @@
                 "$HOME/.bun/bin"
 	];
 
-        programs.home-manager.enable = true;
         nixpkgs.config.allowUnfree = true;
+
+        programs.home-manager.enable = true;
+        home.stateVersion = "25.11";
 }
