@@ -1,4 +1,4 @@
-{ pkgs, newestpkgs, ... }:
+{ pkgs, ... }:
 
 {
         programs.waybar.enable = true;
@@ -14,6 +14,6 @@
                 senpai
                 swayimg
                 profanity
-                newestpkgs.osu-lazer-bin
+                newest.osu-lazer-bin
         ];
 }
