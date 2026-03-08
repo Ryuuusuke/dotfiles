@@ -12,17 +12,26 @@
         };
 
         outputs = { nixpkgs, unstablepkgs, home-manager, ... }:
-        let
-                system = "x86_64-linux"; 
-                newestpkgs = import unstablepkgs {
+                let
+                system = "x86_64-linux";
+
+        pkgs = import nixpkgs {
                 inherit system;
                 config.allowUnfree = true;
-                };
-        in 
-        {
+                overlays = [
+                        (final: prev: {
+                         newest = import unstablepkgs {
+                         inherit system;
+                         config.allowUnfree = true;
+                         };
+                         })
+                ];
+        };
+        in {
                 homeConfigurations."ryusuke" = home-manager.lib.homeManagerConfiguration {
-                        pkgs = nixpkgs.legacyPackages.${system};
-                        extraSpecialArgs = { inherit newestpkgs; };
+                        inherit pkgs;
+
+                        extraSpecialArgs = { inherit system; };
 
                         modules = [ ./home.nix ];
                 };
