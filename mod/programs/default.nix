@@ -14,6 +14,7 @@
                 senpai
                 swayimg
                 profanity
+                newest.tetrio-desktop
                 newest.osu-lazer-bin
         ];
 }
