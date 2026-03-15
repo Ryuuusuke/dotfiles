@@ -4,10 +4,11 @@
         programs.waybar.enable = true;
 
         home.packages = with pkgs; [
+                aerc
                 bat
                 bun
+                cava
                 python313Packages.aria2p
-                aerc
                 localsend
                 gearlever
                 hyprpaper 
