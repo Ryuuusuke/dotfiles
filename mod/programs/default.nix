@@ -5,6 +5,7 @@
 
         home.packages = with pkgs; [
                 aerc
+                anki
                 bat
                 bun
                 cava
